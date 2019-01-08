@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog">
+	<views>50</views>
+	<width>100%</width>
+	<height>100%</height>
+	<backgroundcolor>80FFFFFF</backgroundcolor>
+	<controls>
+		<control type="image">
+			<description>Background</description>
+			<left>0</left>
+			<top>0</top>
+			<width>100%</width>
+			<height>100%</height>
+			<visible>true</visible>
+			<texture>black.png</texture>
+			<animation effect="Fade" start="0" end="80" time="500">WindowOpen</animation>
+		</control>
+		<control type="group">
+			<left>25%</left>
+			<top>40%</top>
+			<width>50%</width>
+			<height>30%</height>
+			<control type="button" id="1">
+				<description>Locked</description>
+				<left>0</left>
+				<top>0</top>
+				<width>150</width>
+				<height>150</height>
+				<visible>true</visible>
+				<texturefocus>locked.png</texturefocus>
+				<texturenofocus>locked.png</texturenofocus>
+				<animation effect="Fade" start="100" end="20" time="300" condition="!Control.HasFocus(1)">Conditional</animation>
+			</control>
+			<control type="image">
+				<description>Arrow</description>
+				<left>220</left>
+				<top>35</top>
+				<width>45</width>
+				<height>150</height>
+				<aspectratio align="center" aligny="center">keep</aspectratio>
+				<visible>true</visible>
+				<texture>arrow_r.png</texture>
+				<animation effect="Fade" start="100" end="20" time="0" condition="true">Conditional</animation>
+			</control>
+			<!-- <control type="image">
+				<description>Button</description>
+				<left>45%</left>
+				<top>0</top>
+				<width>10%</width>
+				<height>135</height>
+				<aspectratio align="center" aligny="bottom">keep</aspectratio>
+				<visible>true</visible>
+				<texture>button.png</texture>
+			</control> -->
+			<control type="image">
+				<description>Arrow</description>
+				<left>255r</left>
+				<top>35</top>
+				<width>45</width>
+				<height>150</height>
+				<aspectratio align="center" aligny="center">keep</aspectratio>
+				<visible>true</visible>
+				<texture>arrow_r.png</texture>
+				<animation effect="Fade" start="100" end="20" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="button" id="2">
+				<description>Locked</description>
+				<right>0</right>
+				<top>0</top>
+				<width>150</width>
+				<height>150</height>
+				<visible>true</visible>
+				<texturefocus>unlocked-focus.png</texturefocus>
+				<texturenofocus>unlocked-focus.png</texturenofocus>
+				<animation effect="Fade" start="100" end="20" time="300" condition="!Control.HasFocus(2)">Conditional</animation>
+			</control>
+			<!-- <control type="group" id="2">
+				<control type="image">
+					<description>Unlocked</description>
+					<right>0</right>
+					<top>0</top>
+					<width>40%</width>
+					<height>100%</height>
+					<aspectratio align="right" aligny="top">keep</aspectratio>
+					<visible>true</visible>
+					<texture>unlocked.png</texture>
+					<animation effect="Fade" start="0" end="20" time="0" condition="Control.HasFocus(70)">Conditional</animation>
+				</control>
+			</control> -->
+		</control>
+	</controls>
+</window>
