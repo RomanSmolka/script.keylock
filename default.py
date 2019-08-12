@@ -40,15 +40,16 @@ class GUI(xbmcgui.WindowXMLDialog):
 		self.setFocusId(1)
 
 	def onAction(self, action):
+		# xbmc.executebuiltin('Notification(Action ID, %s, 1000)'%(action.getId()))
 		if action.getId() == 10:
 			self.close()
 		if action.getId() == 2:
 			self.setFocusId(2)
 			self.triggered = True
-			xbmc.sleep(3000)
+			xbmc.sleep(3200)
 			self.setFocusId(1)
 			self.triggered = False
-		if action.getId() == 7:
+		if action.getId() == 122:
 			if self.triggered: 
 				restoreInput()
 				self.close()

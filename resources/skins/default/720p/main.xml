@@ -71,7 +71,7 @@
 				<height>150</height>
 				<visible>true</visible>
 				<texturefocus>unlocked-focus.png</texturefocus>
-				<texturenofocus>unlocked-focus.png</texturenofocus>
+				<texturenofocus>unlocked.png</texturenofocus>
 				<animation effect="Fade" start="100" end="20" time="300" condition="!Control.HasFocus(2)">Conditional</animation>
 			</control>
 			<!-- <control type="group" id="2">
